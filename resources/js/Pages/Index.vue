@@ -1,8 +1,8 @@
 <template>
     <Head title="Bakery" />
-    <div class="flex h-screen">
-        <DigitalClock />
-    </div>
+    <DigitalClock />
+    <!-- <div class="flex h-screen">
+    </div> -->
 </template>
 
 <script setup>
