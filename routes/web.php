@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ScheduleController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -19,5 +20,7 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('Index');
 });
+
+Route::get('schedule', [ScheduleController::class, 'index']);
 
 require __DIR__ . '/auth.php';
